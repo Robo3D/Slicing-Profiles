@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="C2" version="2016-12-22 17:43:36" app="S3D-Software 3.0.2">
+<profile name="C2" version="2017-01-11 16:38:45" app="S3D-Software 3.0.2">
   <baseProfile>Robo3D R1 (with auto-leveler)(9) (modified)</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Fast</printQuality>
@@ -8,7 +8,7 @@
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
     <autoWidth>0</autoWidth>
-    <width>0.4</width>
+    <width>0.48</width>
     <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
@@ -21,20 +21,20 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.16</layerHeight>
-  <topSolidLayers>8</topSolidLayers>
-  <bottomSolidLayers>8</bottomSolidLayers>
+  <layerHeight>0.2</layerHeight>
+  <topSolidLayers>10</topSolidLayers>
+  <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
-  <printPerimetersInsideOut>0</printPerimetersInsideOut>
+  <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>2</startPointOption>
   <startPointOriginX>112</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
-  <startPointOriginZ>300</startPointOriginZ>
+  <startPointOriginZ>0</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.4</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
@@ -45,7 +45,7 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>3</skirtOutlines>
+  <skirtOutlines>2</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
@@ -68,8 +68,8 @@
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
-  <overlapInfillAngles>1</overlapInfillAngles>
-  <generateSupport>0</generateSupport>
+  <overlapInfillAngles>0</overlapInfillAngles>
+  <generateSupport>1</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>25</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -89,7 +89,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="195"/>
+    <setpoint layer="1" temperature="190"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>1</temperatureNumber>
@@ -158,7 +158,7 @@
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
   <rapidXYspeed>4800</rapidXYspeed>
-  <rapidZspeed>1000</rapidZspeed>
+  <rapidZspeed>4800</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
@@ -167,7 +167,7 @@
   <filamentPricePerKg>46</filamentPricePerKg>
   <filamentDensity>1.25</filamentDensity>
   <useMinPrintHeight>0</useMinPrintHeight>
-  <minPrintHeight>1</minPrintHeight>
+  <minPrintHeight>0</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
   <maxPrintHeight>0</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
@@ -181,7 +181,7 @@
   <retractWhileWiping>0</retractWhileWiping>
   <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>1</avoidCrossingOutline>
-  <maxMovementDetourFactor>3</maxMovementDetourFactor>
+  <maxMovementDetourFactor>5</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
@@ -189,7 +189,7 @@
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
-    <globalExtruderTemperature>195</globalExtruderTemperature>
+    <globalExtruderTemperature>190</globalExtruderTemperature>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>1</isHeatedBed>
@@ -231,9 +231,9 @@
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
-    <layerHeight>0.16</layerHeight>
-    <topSolidLayers>8</topSolidLayers>
-    <bottomSolidLayers>8</bottomSolidLayers>
+    <layerHeight>0.2</layerHeight>
+    <topSolidLayers>10</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
