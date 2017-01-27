@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="C2" version="2017-01-11 16:38:45" app="S3D-Software 3.0.2">
+<profile name="C2" version="2017-01-26 17:40:29" app="S3D-Software 3.0.2">
   <baseProfile>Robo3D R1 (with auto-leveler)(9) (modified)</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Fast</printQuality>
@@ -23,7 +23,7 @@
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
   <topSolidLayers>10</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
+  <bottomSolidLayers>5</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>2</startPointOption>
@@ -32,14 +32,14 @@
   <startPointOriginZ>0</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-  <useRaft>0</useRaft>
+  <useRaft>1</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
-  <raftOffset>5</raftOffset>
-  <raftSeparationDistance>0.4</raftSeparationDistance>
+  <raftOffset>8</raftOffset>
+  <raftSeparationDistance>0.2</raftSeparationDistance>
   <raftInfill>100</raftInfill>
   <disableRaftBaseLayers>0</disableRaftBaseLayers>
   <useSkirt>1</useSkirt>
@@ -68,7 +68,7 @@
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
-  <overlapInfillAngles>0</overlapInfillAngles>
+  <overlapInfillAngles>1</overlapInfillAngles>
   <generateSupport>1</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>25</supportInfillPercentage>
@@ -154,11 +154,11 @@
   <createMB5G>0</createMB5G>
   <postProcessing></postProcessing>
   <defaultSpeed>3600</defaultSpeed>
-  <outlineUnderspeed>0.5</outlineUnderspeed>
+  <outlineUnderspeed>0.8</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
-  <rapidXYspeed>4800</rapidXYspeed>
-  <rapidZspeed>4800</rapidZspeed>
+  <rapidXYspeed>3600</rapidXYspeed>
+  <rapidZspeed>3600</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
@@ -185,7 +185,7 @@
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
-  <allowThinWallGapFill>1</allowThinWallGapFill>
+  <allowThinWallGapFill>0</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
@@ -233,7 +233,7 @@
   <autoConfigureQuality name="Fast">
     <layerHeight>0.2</layerHeight>
     <topSolidLayers>10</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
+    <bottomSolidLayers>5</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
