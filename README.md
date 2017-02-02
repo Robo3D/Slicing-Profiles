@@ -1,4 +1,4 @@
-# Slice-Settings
+# Slicing profiles for the R2 and C2 printers
 Optimized print settings for Cura 2.3 and Simplify3D.
 
 ###Installation
