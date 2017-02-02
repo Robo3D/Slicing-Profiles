@@ -7,7 +7,7 @@ To install, simply download this repository as a ZIP file (or clone it if you're
 
 ###Requests and Issues
 
-If you want to see support for a new slicer, or have a problem you'd like us to solve, please sumbit an issue above. 
+If you want to see support for a new slicer, or have a problem you'd like us to solve, please submit an issue above. 
 
 ###Standards
 
