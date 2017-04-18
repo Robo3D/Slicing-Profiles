@@ -24,6 +24,7 @@
     <setting key="retraction amount">0.5</setting>
     <setting key="standby temperature">220</setting>
     <setting key="cool_fan_speed">80</setting>
+    <setting key="material flow">100</setting>
     <machine>
       <machine_identifier manufacturer="Robo" product="Robo R2" />
       <setting key="print temperature">230</setting>
