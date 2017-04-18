@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='cp1252'?>
+<fdmmaterial xmlns="http://www.robo3d.com/materials">
+  <metadata>
+    <name>
+      <brand>Robo</brand>
+      <material>PLA</material>
+      <color>Generic</color>
+      <label>Robo PLA</label>
+    </name>
+    <compatible>True</compatible>
+    <version>1</version>
+    <GUID></GUID>
+    <description />
+    <adhesion_info />
+    <color_code>#00aaff</color_code>
+  </metadata>
+  <properties>
+    <diameter>1.75</diameter>
+    <density>1.24</density>
+  </properties>
+  <settings>
+    <setting key="print temperature">190.0</setting>
+    <setting key="standby temperature">180.0</setting>
+    <setting key="material flow">90</setting>
+    <setting key="cool_fan_speed">75</setting>
+    <machine>
+      <machine_identifier manufacturer="Robo" product="Robo R2" />
+      <setting key="print temperature">190</setting>
+      <setting key="material initial print temperature">200.0</setting>
+      <setting key="heated bed temperature">60</setting>
+      <setting key="print cooling">80</setting>
+      <hotend id="0.4 mm" />
+    </machine>
+    <machine>
+      <machine_identifier manufacturer="Robo" product="Robo C2" />
+      <setting key="print temperature">190</setting>
+      <setting key="material initial print temperature">200.0</setting>
+      <setting key="print cooling">80</setting>
+      <hotend id="0.4" />
+    </machine>
+    <machine>
+      <machine_identifier manufacturer="Robo" product="Robo R1+" />
+      <setting key="print temperature">222</setting>
+      <setting key="material initial print temperature">232.0</setting>
+      <setting key="print cooling">100</setting>
+      <setting key="heated bed temperature">60</setting>
+      <hotend id="0.4" />
+    </machine>
+  </settings>
+</fdmmaterial>
