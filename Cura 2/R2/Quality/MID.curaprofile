@@ -1,6 +1,6 @@
 [general]
 version = 2
-name = LOW
+name = MID
 definition = fdmprinter
 
 [metadata]
@@ -9,26 +9,26 @@ quality_type = low
 
 [values]
 retraction_min_travel = 5
-top_bottom_thickness = 1.2
+outer_inset_first = True
 support_type = everywhere
 skirt_gap = 0.1
+infill_sparse_density = 30
 speed_travel = 80
-infill_sparse_density = 20
 raft_airgap = 0.26
-layer_height = 0.2
+material_bed_temperature = 60
+layer_height = 0.15
 cool_fan_speed_min = 75
 layer_height_0 = 0.3
 jerk_enabled = True
 retraction_amount = 1
 wall_thickness = 1.2
 adhesion_type = raft
-material_print_temperature = 190
 cool_fan_speed_max = 100
 speed_print = 60
-material_bed_temperature = 60
+material_print_temperature = 190
 layer_0_z_overlap = =raft_airgap / 2
 skirt_line_count = 3
 cool_fan_full_layer = 30
-outer_inset_first = True
+top_bottom_thickness = 1.2
 support_enable = True
 retraction_enable = True
