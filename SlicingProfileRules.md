@@ -1,8 +1,8 @@
-**Cura 15
+# Cura 15
 
 Always add the following start and end GCODE meta in Robo slicing profiles.  RoboLCD depends on this information.  Change `;Sliced for Robo C2` for each machine.
 
-***Start GCODE
+### Start GCODE
 ```
 ;-- START GCODE --
 ;Sliced for Robo C2
@@ -19,7 +19,7 @@ Always add the following start and end GCODE meta in Robo slicing profiles.  Rob
 ;Filament used: {filament_amount}m {filament_weight}g
 ;Settings based on: {material_profile}
 ```
-****End GCODE
+### End GCODE
 
 ```
 ;-- END GCODE --
