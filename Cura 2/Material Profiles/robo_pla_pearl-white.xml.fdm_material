@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Automatically generated PLA profile. Data in this file may not be not correct.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Robo</brand>
+            <material>PLA</material>
+            <color>Pearl White</color>
+        </name>
+        <GUID>d9fc79db-82c3-41b5-8c99-33b3747b8fb3</GUID>
+        <version>0</version>
+        <color_code>#e3d9c6</color_code>
+    </metadata>
+    <properties>
+      <diameter>1.75</diameter>
+      <density>1.24</density>
+    </properties>
+    <settings>
+      <setting key="print temperature">190.0</setting>
+      <setting key="standby temperature">180.0</setting>
+      <setting key="material flow">90</setting>
+      <setting key="cool_fan_speed">75</setting>
+      <machine>
+        <machine_identifier manufacturer="Robo" product="Robo R2" />
+        <setting key="print temperature">195</setting>
+        <setting key="material initial print temperature">200.0</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="print cooling">75</setting>
+        <hotend id="0.4 mm" />
+      </machine>
+      <machine>
+        <machine_identifier manufacturer="Robo" product="Robo C2" />
+        <setting key="print temperature">195</setting>
+        <setting key="material initial print temperature">200.0</setting>
+        <setting key="print cooling">75</setting>
+        <hotend id="0.4" />
+      </machine>
+      <machine>
+        <machine_identifier manufacturer="Robo" product="Robo R1+" />
+        <setting key="print temperature">222</setting>
+        <setting key="material initial print temperature">232.0</setting>
+        <setting key="print cooling">100</setting>
+        <setting key="heated bed temperature">60</setting>
+        <hotend id="0.4" />
+      </machine>
+    </settings>
+    </fdmmaterial>

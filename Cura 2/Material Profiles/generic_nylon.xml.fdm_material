@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic Nylon profile. The data in this file may not be correct for your specific machine.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Generic</brand>
+            <material>Nylon</material>
+            <color>Generic</color>
+        </name>
+        <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
+        <version>1</version>
+        <color_code>#3DF266</color_code>
+    </metadata>
+    <properties>
+        <density>1.14</density>
+        <diameter>2.85</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">245</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="standby temperature">175</setting>
+        <setting key="retraction amount">8</setting>
+        <setting key="retraction speed">25</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="print cooling">40</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction speed">45</setting>
+            </hotend>
+        </machine>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
+        </machine>
+                
+        <machine>
+           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
+           <setting key="print temperature">230</setting>
+           <setting key="heated bed temperature">60</setting>
+           <setting key="standby temperature">160</setting>
+           <setting key="print cooling">0.0</setting>
+           <hotend id="0.25 mm" />
+           <hotend id="0.4 mm" />
+           <hotend id="0.8 mm" />
+       </machine>
+    </settings>
+</fdmmaterial>
