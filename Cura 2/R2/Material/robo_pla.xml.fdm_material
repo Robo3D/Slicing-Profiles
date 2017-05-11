@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='cp1252'?>
-<fdmmaterial xmlns="http://www.robo3d.com/materials">
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
   <metadata>
-    <name>
-      <brand>Robo</brand>
-      <material>PLA</material>
-      <color>Generic</color>
-      <label>Robo PLA</label>
-    </name>
+        <name>
+            <brand>Generic</brand>
+            <material>PLA</material>
+            <color>Generic</color>
+        </name>
     <compatible>True</compatible>
     <version>1</version>
     <GUID></GUID>
