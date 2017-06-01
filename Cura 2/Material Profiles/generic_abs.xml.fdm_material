@@ -15,7 +15,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
     </metadata>
     <properties>
         <density>1.10</density>
-        <diameter>2.85</diameter>
+        <diameter>1.75</diameter>
     </properties>
     <settings>
         <setting key="print temperature">230</setting>
