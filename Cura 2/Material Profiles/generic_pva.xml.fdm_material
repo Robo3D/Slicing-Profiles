@@ -20,39 +20,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
     <settings>
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-
-        <machine>
-           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="hardware compatible">yes</setting>
-           <setting key="print temperature">205</setting>
-           <setting key="heated bed temperature">50</setting>
-           <setting key="standby temperature">160</setting>
-           <setting key="print cooling">0.0</setting>
-           <setting key="retraction prime speed">8</setting>
-           <setting key="nozzle switch prime speed">8</setting>
-           <hotend id="0.25 mm" />
-           <hotend id="0.4 mm" />
-           <hotend id="0.8 mm" />
-       </machine>
+        <setting key="print cooling">0.0</setting>
+        <setting key="heated bed temperature">50</setting>
     </settings>
 </fdmmaterial>
