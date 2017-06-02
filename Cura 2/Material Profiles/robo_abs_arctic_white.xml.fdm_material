@@ -21,6 +21,7 @@ Automatically generated PLA profile. Data in this file may not be not correct.
       <setting key="print temperature">230</setting>
       <setting key="material initial print temperature">240.0</setting>
       <setting key="standby temperature">210.0</setting>
+      <setting key="print cooling">0</setting>
       <machine>
         <machine_identifier manufacturer="Robo" product="Robo R2" />
         <setting key="heated bed temperature">80</setting>

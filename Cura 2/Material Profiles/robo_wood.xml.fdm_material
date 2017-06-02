@@ -21,7 +21,7 @@
     <setting key="print temperature">195.0</setting>
     <setting key="standby temperature">185.0</setting>
     <setting key="material flow">100</setting>
-    <setting key="cool_fan_speed">75</setting>
+    <setting key="print cooling">75</setting>
     <machine>
       <machine_identifier manufacturer="Robo" product="Robo R2" />
       <setting key="print temperature">190</setting>
