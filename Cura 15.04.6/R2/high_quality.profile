@@ -1,13 +1,19 @@
 _description: Imported from HIGH.ini on 2017-04-22 00:25
 _display_name: high_quality
-bottom_layer_speed: 25
+bottom_layer_speed: 10
 bottom_thickness: 0.3
 brim_line_count: 8
 cool_head_lift: false
 cool_min_feedrate: 19
 cool_min_layer_time: 7
 end_gcode:
-- ''
+- ' M104 T0 S0                     ;extruder heater off
+
+  M104 T1 S0                     ;extruder heater off
+
+  M140 S0                     ;heated bed heater off (if you have it)
+
+  ;{profile_string}'
 - ''
 - ''
 - ''
@@ -17,13 +23,13 @@ fan_speed: 100
 fan_speed_max: 100
 filament_diameter:
 - 1.75
-- false
+- 1.75
 - false
 - false
 filament_flow: 100
 fill_density: 40
 fill_overlap: 10
-first_layer_width_factor: 100
+first_layer_width_factor: 300
 fix_horrible_extensive_stitching: false
 fix_horrible_union_all_type_a: true
 fix_horrible_union_all_type_b: false
@@ -32,25 +38,25 @@ follow_surface: false
 infill_speed: 40
 inset0_speed: 25
 insetx_speed: 25
-inner_shell_speed: 50
+inner_shell_speed: 30
 layer_height: 0.1
-layer0_width_factor: 150
+layer0_width_factor: 300
 object_sink: false
 ooze_shield: false
-outer_shell_speed: 40
+outer_shell_speed: 25
 overlap_dual: 0.15
 platform_adhesion: raft
 print_bed_temperature: 60
 print_speed: 50
 print_temperature:
 - 190
+- 190
 - false
 - false
-- false
-raft_airgap: 0.25
+raft_airgap: 0.26
 raft_base_linewidth: 1.0
 raft_base_thickness: 0.3
-raft_interface_linewidth: 0.4
+raft_interface_linewidth: 0.6
 raft_interface_thickness: 0.2
 raft_line_spacing: 3.0
 raft_margin: 5.0
@@ -64,9 +70,9 @@ retraction_hop: 0.075
 retraction_min_travel: 7
 retraction_minimal_extrusion: 0.02
 retraction_speed: 40
-skirt_gap: 3.0
-skirt_line_count: 3
-skirt_minimal_length: 150.0
+skirt_gap: 2
+skirt_line_count: 2.0
+skirt_minimal_length: 100
 solid_bottom: true
 solid_layer_thickness: 1.2
 solid_top: true
@@ -85,21 +91,18 @@ start_gcode:
   M190 S{print_bed_temperature} ;Uncomment to add your own bed temperature line
 
   M104 S{print_temperature} ;Uncomment to add your own temperature line
-
-  M109 T1 S{print_temperature2} ;Uncomment to add your own temperature line
-
-  M109 T0 S{print_temperature} ;Uncomment to add your own temperature line'
+  '
 - ''
 - ''
 - ''
-support: everywhere
+support: none
 support_angle: 50
 support_dual_extrusion: both
-support_fill_rate: 15
+support_fill_rate: 25
 support_type: lines
 support_xy_distance: 0.7
 support_z_distance: 0.22
-travel_speed: 100
+travel_speed: 80
 wall_thickness: 1.2
 wipe_tower: false
 wipe_tower_volume: 15

@@ -1,8 +1,8 @@
 _description: Imported from Medium Quality Robo C2.ini on 2018-03-01 20:43
-_display_name: Medium Quality Robo C2
+_display_name: PLA Medium Quality Robo C2
 bottom_layer_speed: 10
 bottom_thickness: 0.3
-brim_line_count: 20
+brim_line_count: 8
 cool_head_lift: false
 cool_min_feedrate: 19
 cool_min_layer_time: 7
@@ -18,7 +18,7 @@ end_gcode:
 - ''
 - ''
 fan_enabled: true
-fan_full_height: 3
+fan_full_height: 6
 fan_speed: 100
 fan_speed_max: 100
 filament_diameter:
@@ -29,28 +29,30 @@ filament_diameter:
 filament_flow: 90
 fill_density: 30
 fill_overlap: 10
-first_layer_width_factor: 150
+first_layer_width_factor: 300
 fix_horrible_extensive_stitching: false
 fix_horrible_union_all_type_a: true
 fix_horrible_union_all_type_b: false
 fix_horrible_use_open_bits: false
 follow_surface: false
 infill_speed: 50
-inner_shell_speed: 30
+inset0_speed: 25
+insetx_speed: 25
+inner_shell_speed: 50
 layer_height: 0.15
+layer0_width_factor: 150
 object_sink: false
-ooze_shield: true
+ooze_shield: false
 outer_shell_speed: 25
 overlap_dual: 0.15
 platform_adhesion: raft
-print_bed_temperature: 50
 print_speed: 50
 print_temperature:
 - 190
 - 190
 - false
 - false
-raft_airgap: 0.16
+raft_airgap: 0.26
 raft_base_linewidth: 1.0
 raft_base_thickness: 0.3
 raft_interface_linewidth: 0.6
@@ -58,17 +60,17 @@ raft_interface_thickness: 0.2
 raft_line_spacing: 3.0
 raft_margin: 5.0
 raft_surface_layers: 2
-retraction_amount: true
+retraction_amount: 3
 retraction_combing: all
-retraction_dual_amount: true
+retraction_dual_amount: 2
 retraction_enable: true
-retraction_hop: 2.0
+retraction_hop: 0.075
 retraction_min_travel: 7
 retraction_minimal_extrusion: 0.02
 retraction_speed: 40
-skirt_gap: false
-skirt_line_count: false
-skirt_minimal_length: false
+skirt_gap: 2
+skirt_line_count: 2.0
+skirt_minimal_length: 100
 solid_bottom: true
 solid_layer_thickness: 1.2
 solid_top: true
@@ -98,7 +100,7 @@ support_fill_rate: 25
 support_type: lines
 support_xy_distance: 0.7
 support_z_distance: 0.22
-travel_speed: 100
+travel_speed: 80
 wall_thickness: 1.2
-wipe_tower: true
+wipe_tower: false
 wipe_tower_volume: 15
