@@ -22,7 +22,7 @@ filament_diameter:
 - false
 - false
 - false
-filament_flow: 90
+filament_flow: 100
 fill_density: 20
 fill_overlap: 10
 first_layer_width_factor: 100
