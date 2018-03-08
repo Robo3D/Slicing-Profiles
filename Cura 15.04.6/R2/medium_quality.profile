@@ -23,13 +23,13 @@ fan_speed: 100
 fan_speed_max: 100
 filament_diameter:
 - 1.75
-- 1.75
+- false
 - false
 - false
 filament_flow: 100
 fill_density: 20
 fill_overlap: 10
-first_layer_width_factor: 300
+first_layer_width_factor: 100
 fix_horrible_extensive_stitching: false
 fix_horrible_union_all_type_a: true
 fix_horrible_union_all_type_b: false
@@ -50,14 +50,13 @@ print_bed_temperature: 60
 print_speed: 50
 print_temperature:
 - 190
-- 190
 - false
 - false
-raft_airgap: 0.26
-raft_base_linewidth: 1.0
-raft_base_thickness: 0.3
-raft_interface_linewidth: 0.6
-raft_interface_thickness: 0.2
+- false
+raft_airgap: 0.25
+raft_airgap_all: 0.0
+raft_interface_thickness: 0.27
+raft_interface_linewidth: 0.4
 raft_line_spacing: 3.0
 raft_margin: 5.0
 raft_surface_layers: 2
