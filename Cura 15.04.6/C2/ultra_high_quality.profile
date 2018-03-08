@@ -9,10 +9,6 @@ cool_min_layer_time: 7
 end_gcode:
 - ' M104 T0 S0                     ;extruder heater off
 
-  M104 T1 S0                     ;extruder heater off
-
-  M140 S0                     ;heated bed heater off (if you have it)
-
   ;{profile_string}'
 - ''
 - ''
