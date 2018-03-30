@@ -1,0 +1,30 @@
+{
+    "id": "robo_c2",
+    "version": 2,
+    "name": "Robo C2",
+    "inherits": "robo_base",
+    "metadata": {
+        "visible": true,
+        "author": "Robo",
+        "manufacturer": "Robo",
+        "category": "Robo",
+        "file_formats": "text/x-gcode",
+        "preferred_material": "*robo_pla_capri_teal*",
+		    "platform": "roboc2.stl",
+        "platform_offset": [0, -22, -35]
+    },
+
+        "overrides": {
+            "machine_name": { "default_value": "Robo C2" },
+            "machine_start_gcode": {
+                "default_value": "; -- START GCODE --\n;-- end of START GCODE --" },
+            "machine_end_gcode": {
+                "default_value": "; -- END GCODE --\n; -- end of END GCODE --" },
+    	    	"machine_width": { "default_value": 127 },
+            "machine_depth": { "default_value": 127 },
+            "machine_height": { "default_value": 145 },
+            "machine_heated_bed": { "default_value": false },
+            "machine_extruder_count": { "default_value": 1 }
+
+        }
+    }

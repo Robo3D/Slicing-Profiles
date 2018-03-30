@@ -1,0 +1,30 @@
+{
+    "id": "robo_r2",
+    "version": 2,
+    "name": "Robo R2",
+    "inherits": "robo_base",
+    "metadata": {
+        "visible": true,
+        "author": "Robo",
+        "manufacturer": "Robo",
+        "category": "Robo",
+        "preferred_material": "*robo_pla_red*",
+        "file_formats": "text/x-gcode",
+		    "platform": "robor2.stl",
+        "platform_offset": [-117, -22, -135]
+    },
+
+    "overrides": {
+        "machine_name": { "default_value": "Robo R2" },
+        "machine_start_gcode": {
+            "default_value": "; -- START GCODE --\n;-- end of START GCODE --" },
+        "machine_end_gcode": {
+            "default_value": "; -- END GCODE --\n; -- end of END GCODE --" },
+	    	"machine_width": { "default_value": 197 },
+        "machine_depth": { "default_value": 197 },
+        "machine_height": { "default_value": 250 },
+        "machine_heated_bed": { "default_value": true },
+        "machine_extruder_count": { "default_value": 1 }
+
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "id": "robo_r2_dual",
+    "version": 2,
+    "name": "Robo R2 Dual",
+    "inherits": "robo_base",
+    "metadata": {
+      "visible": true,
+      "author": "Robo",
+      "file_formats": "text/x-gcode",
+      "manufacturer": "Robo",
+	    "platform": "robor2.stl",
+      "platform_offset": [-117, -22, -135],
+      "machine_extruder_trains":
+      {
+          "0": "robo_r2_extruder_0",
+          "1": "robo_r2_extruder_1"
+      }
+    },
+
+        "overrides": {
+            "machine_name": { "default_value": "Robo R2 Dual" },
+            "machine_start_gcode": {
+                "default_value": "; -- START GCODE --\n;-- end of START GCODE --" },
+            "machine_end_gcode": {
+                "default_value": "; -- END GCODE --\n; -- end of END GCODE --" },
+
+            "machine_width": { "default_value": 197 },
+            "machine_depth": { "default_value": 197 },
+            "machine_height": { "default_value": 250 },
+            "machine_heated_bed": { "default_value": true },
+
+            "machine_nozzle_heat_up_speed": {
+                "default_value": 6
+            },
+            "machine_nozzle_cool_down_speed": {
+                "default_value": 4
+            },
+            "machine_min_cool_heat_time_window": {
+                "default_value": 3600
+            },
+            "machine_extruder_count": {
+                "default_value": 2
+            },
+            "prime_tower_position_x": { "value": "machine_depth - max(extruderValue(adhesion_extruder_nr, 'brim_width') * extruderValue(adhesion_extruder_nr, 'initial_layer_line_width_factor') / 100 if adhesion_type == 'brim' else (extruderValue(adhesion_extruder_nr, 'raft_margin') if adhesion_type == 'raft' else (extruderValue(adhesion_extruder_nr, 'skirt_gap') if adhesion_type == 'skirt' else 0)), max(extruderValues('travel_avoid_distance'))) - max(extruderValues('support_offset')) - sum(extruderValues('skirt_brim_line_width')) - 30" },
+
+            "cool_fan_full_at_height": {
+                "default_value": 0.4
+            },
+
+            "adhesion_type": { "default_value": "skirt" },
+            "retraction_combing": { "value": "'all'" },
+            "retraction_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
+            "retraction_amount_multiplier": { "value": 2 },
+            "retraction_retract_speed":
+            {
+                "value": "min(retraction_speed, machine_max_feedrate_e)",
+                "maximum_value_warning": "machine_max_feedrate_e"
+            },
+            "switch_extruder_retraction_speeds": { "maximum_value_warning": "machine_max_feedrate_e" },
+            "switch_extruder_retraction_speed":
+            {
+                "value": "min(switch_extruder_retraction_speeds, machine_max_feedrate_e)",
+                "maximum_value_warning": "machine_max_feedrate_e"
+            },
+            "switch_extruder_prime_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
+            "retraction_hop_height_after_extruder_switch": { "value": 5 }
+        }
+    }
