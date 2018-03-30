@@ -4,7 +4,6 @@
     "name": "Robo C2",
     "inherits": "robo_base",
     "metadata": {
-        "visible": true,
         "author": "Robo",
         "manufacturer": "Robo",
         "category": "Robo",
