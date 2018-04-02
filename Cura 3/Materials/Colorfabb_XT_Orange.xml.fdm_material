@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Colorfabb</brand>
+            <material>XT</material>
+            <color>Orange</color>
+        </name>
+        <GUID>53767a24-050c-11e8-80e6-efc9d1bc38a9</GUID>
+        <version>1</version>
+        <color_code>#FE9D0A</color_code>
+    </metadata>
+    <properties>
+        <density>1.36</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">250</setting>
+        <setting key="heated bed temperature">80</setting>        
+        <machine>
+           <machine_identifier manufacturer="Robo" product="Robo R2" />
+           <machine_identifier manufacturer="Robo" product="Robo C2" />
+           <machine_identifier manufacturer="Robo" product="Robo R1" />
+        </machine>
+    </settings>
+</fdmmaterial>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Automatically generated PLA profile. Data in this file may not be not correct.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Robo</brand>
+            <material>ABS</material>
+            <color>Generic</color>
+        </name>
+        <GUID>3ee70a86-77d8-4b87-8005-e4a1bc57d2ce</GUID>
+        <version>0</version>
+        <color_code>#a1a1a0</color_code>
+    </metadata>
+    <properties>
+      <diameter>1.75</diameter>
+      <density>1.04</density>
+    </properties>
+    <settings>
+        <setting key="print temperature">230</setting>
+        <setting key="heated bed temperature">80</setting>
+        <setting key="standby temperature">200</setting>
+        <setting key="print cooling">0.0</setting>
+        <setting key="retraction speed">45.0</setting>
+        <setting key="retraction amount">2</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Robo" product="Robo R2" />
+            <setting key="print cooling">0.0</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="heated bed temperature">100</setting>
+            <setting key="print temperature">230</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Robo" product="Robo C2" />
+            <setting key="hardware compatible">no</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Robo" product="Robo R1" />
+            <setting key="print cooling">0.0</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="heated bed temperature">110</setting>
+            <setting key="print temperature">245</setting>
+        </machine>
+
+    </settings>
+</fdmmaterial>

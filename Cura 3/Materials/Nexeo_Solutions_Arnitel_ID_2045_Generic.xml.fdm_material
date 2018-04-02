@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Nexeo Solutions</brand>
+            <material>Arnitel ID 2045</material>
+            <color>Generic</color>
+        </name>
+        <GUID>5374cc6e-050c-11e8-ba53-efc9d1bc38a9</GUID>
+        <version>1</version>
+        <color_code>#B22744</color_code>
+    </metadata>
+    <properties>
+        <density>1.1</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">240</setting>
+        <setting key="heated bed temperature">70</setting>        
+        <machine>
+           <machine_identifier manufacturer="Robo" product="Robo R2" />
+           <machine_identifier manufacturer="Robo" product="Robo C2" />
+           <machine_identifier manufacturer="Robo" product="Robo R1" />
+        </machine>
+    </settings>
+</fdmmaterial>
