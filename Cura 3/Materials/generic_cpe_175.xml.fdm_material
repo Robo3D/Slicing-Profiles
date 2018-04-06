@@ -23,5 +23,12 @@ Generic CPE 1.75mm profile. The data in this file may not be correct for your sp
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">70</setting>
         <setting key="standby temperature">175</setting>
+
+        <machine>
+           <machine_identifier manufacturer="Robo" product="Robo R2" />
+           <machine_identifier manufacturer="Robo" product="Robo C2" />
+           <machine_identifier manufacturer="Robo" product="Robo R1" />
+        </machine>
+        
     </settings>
 </fdmmaterial>
