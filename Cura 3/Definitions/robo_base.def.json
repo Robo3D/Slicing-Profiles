@@ -127,7 +127,7 @@
             "speed_wall": { "value": "speed_print" },
             "speed_topbottom": { "value": "speed_wall_0" },
             "speed_support_interface": { "value": "speed_wall" },
-            "speed_travel": { "value": "round(speed_print if magic_spiralize else 100)" },
+            "speed_travel": { "value": "round(speed_print if magic_spiralize else 80)" },
             "speed_travel_layer_0": { "value": "round(speed_travel * speed_layer_0 / speed_print, 1)" },
             "speed_equalize_flow_enabled": { "value": true },
             "speed_equalize_flow_max": { "value": 100 },
