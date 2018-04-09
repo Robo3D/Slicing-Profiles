@@ -25,5 +25,11 @@
             <hotend id="0.4 mm 2-fans" />
 
         </machine>
+
+        <machine>
+           <machine_identifier manufacturer="Robo" product="Robo R2" />
+           <machine_identifier manufacturer="Robo" product="Robo R1" />
+        </machine>
+
     </settings>
 </fdmmaterial>

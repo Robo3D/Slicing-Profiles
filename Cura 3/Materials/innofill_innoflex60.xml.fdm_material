@@ -18,4 +18,10 @@
     <settings>
         <setting key="print temperature">220</setting>
     </settings>
+
+    <machine>
+       <machine_identifier manufacturer="Robo" product="Robo R2" />
+       <machine_identifier manufacturer="Robo" product="Robo R1" />
+    </machine>
+    
 </fdmmaterial>

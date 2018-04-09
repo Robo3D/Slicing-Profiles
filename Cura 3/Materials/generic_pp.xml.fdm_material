@@ -61,5 +61,11 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <setting key="print cooling">10</setting>
             </hotend>
         </machine>
+
+        <machine>
+           <machine_identifier manufacturer="Robo" product="Robo R2" />
+           <machine_identifier manufacturer="Robo" product="Robo R1" />
+        </machine>
+        
     </settings>
 </fdmmaterial>

@@ -15,7 +15,7 @@
             "material_diameter": { "default_value": 1.75 },
             "material_bed_temp_wait": { "value": true },
             "machine_filament_park_distance": { "value": "machine_heat_zone_length + 5" },
-            "machine_heat_zone_length": { "value": 6.0 },
+            "machine_heat_zone_length": { "value": 16 },
             "material_print_temp_wait": { "value": true },
             "material_bed_temp_prepend": { "value": false },
             "material_print_temp_prepend": { "value": false },
@@ -32,14 +32,25 @@
             "machine_center_is_zero": { "default_value": false },
             "machine_gcode_flavor": { "default_value": "RepRap (Marlin/Sprinter)" },
             "machine_min_cool_heat_time_window": { "value": "15" },
+            "machine_min_cool_heat_time_window": { "value": "15" },
+            "machine_head_with_fans_polygon":
+            {
+                "default_value":
+                [
+                    [-60.8, 43.65],
+                    [-60.8, -14.6],
+                    [64.8, 43.65],
+                    [64.8, -14.6]
+                ]
+            },
+            "gantry_height": { "default_value": 70 },
 
             "adhesion_type": { "default_value": "raft" },
             "brim_width": { "value": "3" },
 
             "acceleration_enabled": { "value": false },
-            "machine_acceleration": { "value": "500" },
             "acceleration_print": { "value": "machine_acceleration" },
-            "acceleration_wall_x": { "value": "round(acceleration_print - (acceleration_print - acceleration_wall_0)/ 2.)" },
+            "acceleration_wall_x": { "value": "round(acceleration_print - (acceleration_print - acceleration_wall_0)/ 2.0)" },
             "acceleration_topbottom": { "value": "acceleration_wall_0" },
             "acceleration_support": { "value": "acceleration_wall_x" },
             "acceleration_support_interface": { "value": "acceleration_topbottom" },
@@ -51,7 +62,7 @@
             "coasting_enable": { "value": false },
             "coasting_min_volume": { "value": "coasting_volume * 2" },
 
-            "cool_fan_full_at_height": { "value": "2 if adhesion_type == 'raft' else layer_height_0 + 6 * layer_height" },
+            "cool_fan_full_at_height": { "value": "0 if adhesion_type == 'raft' else layer_height_0 + 6 * layer_height" },
             "cool_fan_speed": { "value": "100" },
             "cool_fan_speed_max": { "value": "100" },
             "cool_min_speed": { "value": "5" },

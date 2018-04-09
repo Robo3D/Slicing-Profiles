@@ -40,5 +40,11 @@
                 <setting key="retraction amount">1.5</setting>
             </hotend>
         </machine>
+
+        <machine>
+           <machine_identifier manufacturer="Robo" product="Robo R2" />
+           <machine_identifier manufacturer="Robo" product="Robo R1" />
+        </machine>
+
     </settings>
 </fdmmaterial>
