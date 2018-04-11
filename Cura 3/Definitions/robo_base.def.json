@@ -101,7 +101,7 @@
             "prime_tower_wipe_enabled": { "default_value": false },
             "prime_blob_enable": { "enabled": true },
 
-            "raft_airgap": { "value": "0.26" },
+            "raft_airgap": { "value": "0.2" },
             "raft_base_thickness": { "value": "0.3" },
             "raft_base_line_spacing": { "value": "3" },
             "raft_base_line_width": { "value": "1" },
@@ -112,6 +112,7 @@
             "raft_jerk": { "value": "jerk_layer_0" },
             "raft_margin": { "value": "5" },
             "raft_surface_layers": { "value": "2" },
+            "raft_surface_thickness": { "value": "0.2" },
 
             "retract_at_layer_change": { "value": false },
             "retraction_amount_multiplier": { "value": 1 },
