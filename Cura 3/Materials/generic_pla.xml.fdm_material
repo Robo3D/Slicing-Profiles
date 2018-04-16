@@ -22,7 +22,7 @@
         <setting key="retraction amount">1.75</setting>
 
         <machine>
-           <machine_identifier manufacturer="Robo" product="robor2" />
+           <machine_identifier manufacturer="Robo" product="robo R2" />
            <machine_identifier manufacturer="Robo" product="Robo C2" />
            <machine_identifier manufacturer="Robo" product="Robo R1" />
         </machine>
