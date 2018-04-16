@@ -1,10 +1,10 @@
 {
-    "id": "robo_extruder_1",
+    "id": "robor2_dual_extruder_0",
     "version": 2,
-    "name": "Series 2 Direct Drive Extruder",
+    "name": "Extruder 1",
     "inherits": "fdmextruder",
     "metadata": {
-        "machine": "robo",
+        "machine": "robor2_dual",
         "position": "0"
     },
 
