@@ -1,7 +1,7 @@
 {
     "id": "robor2_dual_extruder_1",
     "version": 2,
-    "name": "Extruder 2",
+    "name": "Right Extruder",
     "inherits": "fdmextruder",
     "metadata": {
         "machine": "robor2_dual",
@@ -13,7 +13,7 @@
             "default_value": 1,
             "maximum_value": "1"
         },
-        "machine_nozzle_offset_x": { "default_value": -20.0 },
+        "machine_nozzle_offset_x": { "default_value": 0.0 },
         "machine_nozzle_offset_y": { "default_value": 0.0 },
         "machine_extruder_start_pos_abs": { "default_value": false },
         "machine_extruder_start_pos_x": { "default_value": 0.0 },

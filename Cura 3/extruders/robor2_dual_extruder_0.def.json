@@ -1,7 +1,7 @@
 {
     "id": "robor2_dual_extruder_0",
     "version": 2,
-    "name": "Extruder 1",
+    "name": "Left Extruder",
     "inherits": "fdmextruder",
     "metadata": {
         "machine": "robor2_dual",
