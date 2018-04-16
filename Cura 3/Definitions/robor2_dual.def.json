@@ -32,6 +32,9 @@
             "machine_depth": { "default_value": 197 },
             "machine_height": { "default_value": 250 },
             "machine_heated_bed": { "default_value": true },
+            "machine_disallowed_areas": { "default_value": [
+                [[-98.5, 98.5], [-76.3, -98.5], [-76.3, 98.5], [-98.5, -98.5]]
+            ]},
 
             "machine_nozzle_heat_up_speed": { "default_value": 6 },
             "machine_nozzle_cool_down_speed": { "default_value": 4 },
