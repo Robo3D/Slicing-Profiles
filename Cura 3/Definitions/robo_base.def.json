@@ -16,12 +16,10 @@
             "machine_acceleration": { "default_value": 1750 },
             "machine_max_jerk_xy": { "value": 8 },
             "machine_max_feedrate_e": { "default_value": 35 },
-            "material_bed_temp_wait": { "value": true },
             "machine_filament_park_distance": { "value": "machine_heat_zone_length + 5" },
             "machine_heat_zone_length": { "value": 16 },
             "material_print_temp_wait": { "value": true },
-            "material_bed_temp_prepend": { "value": false },
-            "material_print_temp_prepend": { "value": false },
+            "material_bed_temp_wait": { "value": true },
             "material_flow_dependent_temperature": {
                 "enabled": true,
                 "value": false },
@@ -170,14 +168,10 @@
             "top_bottom_thickness": { "value": "layer_height * 3" },
             "travel_avoid_distance": { "value": "3" },
 
-            "wall_thickness": { "value": "0.8" },
+            "wall_thickness": { "value": "1.2" },
             "wall_line_width_x": { "value": "machine_nozzle_size" },
             "wall_line_width_0": { "value": "machine_nozzle_size * 0.875" },
-            "wall_0_inset": { "value": "wall_line_width_x - wall_line_width_0" },
+            "wall_0_inset": { "value": "wall_line_width_x - wall_line_width_0" }
 
-            "z_seam_type": { "value": "'back'" },
-            "z_seam_x": { "value": "int(machine_width/2.) if print_mode == 'regular' else int((machine_width/2.)/2.) if print_mode == 'duplication' else int((machine_width/2. - 54/2)/2.)" },
-            "z_seam_y": { "value": "machine_depth" },
-            "z_seam_relative": { "value": false }
         }
     }
