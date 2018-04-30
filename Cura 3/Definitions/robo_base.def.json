@@ -87,6 +87,7 @@
             "jerk_travel": { "value": "jerk_print if magic_spiralize else machine_max_jerk_xy" },
             "jerk_layer_0": { "value": "jerk_topbottom" },
 
+            "layer_0_z_overlap": { "default_value": 0.1 },
             "layer_height_0": { "value": "round(machine_nozzle_size / 1.3, 2)" },
 
             "layer_start_x": { "value": "sum(extruderValues('machine_extruder_start_pos_x')) / len(extruderValues('machine_extruder_start_pos_x'))" },
@@ -113,6 +114,7 @@
             "raft_jerk": { "value": "jerk_layer_0" },
             "raft_margin": { "value": "5" },
             "raft_surface_layers": { "value": "2" },
+            "raft_surface_speed": { "default_value": 50 },
             "raft_surface_thickness": { "value": "0.2" },
 
             "retract_at_layer_change": { "value": false },
@@ -145,6 +147,7 @@
             "speed_equalize_flow_enabled": { "value": true },
             "speed_equalize_flow_max": { "value": 100 },
             "speed_infill": { "default_value": "speed_print" },
+            "speed_layer_0": { "default_value": "15" },
             "speed_prime_tower": { "value": "speed_topbottom" },
             "speed_support": { "value": "speed_wall_0" },
             "speed_support_interface": { "value": "speed_topbottom" },
