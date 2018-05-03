@@ -1,5 +1,5 @@
 {
-    "id": "robo_3d_r1",
+    "id": "robor1",
     "name": "Robo R1+",
     "version": 2,
     "inherits": "fdmprinter",
@@ -10,9 +10,7 @@
         "category": "Robo",
         "file_formats": "text/x-gcode",
         "platform": "robor1.stl",
-        "platform_offset": [-113, 0, 105],
-
-        "supports_usb_connection": true
+        "platform_offset": [-113, 0, 105]
     },
 
     "overrides": {

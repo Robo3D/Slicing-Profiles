@@ -16,10 +16,12 @@
             "machine_acceleration": { "default_value": 1750 },
             "machine_max_jerk_xy": { "value": 8 },
             "machine_max_feedrate_e": { "default_value": 35 },
+            "material_bed_temp_wait": { "value": true },
             "machine_filament_park_distance": { "value": "machine_heat_zone_length + 5" },
             "machine_heat_zone_length": { "value": 16 },
             "material_print_temp_wait": { "value": true },
-            "material_bed_temp_wait": { "value": true },
+            "material_bed_temp_prepend": { "value": true },
+            "material_print_temp_prepend": { "value": true },
             "material_flow_dependent_temperature": {
                 "enabled": true,
                 "value": false },
@@ -63,7 +65,7 @@
             "coasting_enable": { "value": false },
             "coasting_min_volume": { "value": "coasting_volume * 2" },
 
-            "cool_fan_full_at_height": { "value": "0 if adhesion_type == 'raft' else layer_height_0 + 6 * layer_height" },
+            "cool_fan_full_at_height": { "value": "0 if adhesion_type == 'raft' else layer_height_0 + 3 * layer_height" },
             "cool_fan_speed": { "value": "100" },
             "cool_fan_speed_max": { "value": "100" },
             "cool_min_speed": { "value": "5" },
@@ -87,7 +89,6 @@
             "jerk_travel": { "value": "jerk_print if magic_spiralize else machine_max_jerk_xy" },
             "jerk_layer_0": { "value": "jerk_topbottom" },
 
-            "layer_0_z_overlap": { "default_value": 0.1 },
             "layer_height_0": { "value": "round(machine_nozzle_size / 1.3, 2)" },
 
             "layer_start_x": { "value": "sum(extruderValues('machine_extruder_start_pos_x')) / len(extruderValues('machine_extruder_start_pos_x'))" },
@@ -114,7 +115,6 @@
             "raft_jerk": { "value": "jerk_layer_0" },
             "raft_margin": { "value": "5" },
             "raft_surface_layers": { "value": "2" },
-            "raft_surface_speed": { "default_value": 50 },
             "raft_surface_thickness": { "value": "0.2" },
 
             "retract_at_layer_change": { "value": false },
@@ -147,7 +147,6 @@
             "speed_equalize_flow_enabled": { "value": true },
             "speed_equalize_flow_max": { "value": 100 },
             "speed_infill": { "default_value": "speed_print" },
-            "speed_layer_0": { "default_value": "15" },
             "speed_prime_tower": { "value": "speed_topbottom" },
             "speed_support": { "value": "speed_wall_0" },
             "speed_support_interface": { "value": "speed_topbottom" },
@@ -171,10 +170,14 @@
             "top_bottom_thickness": { "value": "layer_height * 3" },
             "travel_avoid_distance": { "value": "3" },
 
-            "wall_thickness": { "value": "1.2" },
+            "wall_thickness": { "value": "1.0" },
             "wall_line_width_x": { "value": "machine_nozzle_size" },
             "wall_line_width_0": { "value": "machine_nozzle_size * 0.875" },
-            "wall_0_inset": { "value": "wall_line_width_x - wall_line_width_0" }
+            "wall_0_inset": { "value": "wall_line_width_x - wall_line_width_0" },
 
+            "z_seam_type": { "value": "'back'" },
+            "z_seam_x": { "value": "int(machine_width/2.) if print_mode == 'regular' else int((machine_width/2.)/2.) if print_mode == 'duplication' else int((machine_width/2. - 54/2)/2.)" },
+            "z_seam_y": { "value": "machine_depth" },
+            "z_seam_relative": { "value": false }
         }
     }
