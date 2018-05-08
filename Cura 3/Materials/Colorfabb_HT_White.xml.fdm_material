@@ -19,7 +19,6 @@
         <setting key="heated bed temperature">100</setting>
         <machine>
            <machine_identifier manufacturer="Robo" product="Robo R2" />
-           <machine_identifier manufacturer="Robo" product="Robo C2" />
            <machine_identifier manufacturer="Robo" product="Robo R1" />
         </machine>
     </settings>
