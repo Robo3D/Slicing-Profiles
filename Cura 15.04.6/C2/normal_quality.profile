@@ -1,6 +1,6 @@
-_description: Imported from ULTRA HIGH.ini on 2017-04-22 00:26
-_display_name: ultra_high_quality
-bottom_layer_speed: 10
+_description: Imported from High Quality Robo C2.ini on 2017-03-01 20:45
+_display_name: PLA High Quality Robo C2
+bottom_layer_speed: 15
 bottom_thickness: 0.3
 brim_line_count: 8
 cool_head_lift: false
@@ -8,8 +8,6 @@ cool_min_feedrate: 19
 cool_min_layer_time: 7
 end_gcode:
 - ' M104 T0 S0                     ;extruder heater off
-
-  M140 S0                     ;heated bed heater off (if you have it)
 
   ;{profile_string}'
 - ''
@@ -26,7 +24,7 @@ filament_diameter:
 - false
 filament_flow: 100
 fill_density: 20
-fill_overlap: 15
+fill_overlap: 10
 first_layer_width_factor: 100
 fix_horrible_extensive_stitching: false
 fix_horrible_union_all_type_a: true
@@ -37,15 +35,14 @@ infill_speed: 40
 inset0_speed: 25
 insetx_speed: 25
 inner_shell_speed: 30
-layer_height: 0.06
+layer_height: 0.1
 layer0_width_factor: 300
 object_sink: false
 ooze_shield: false
 outer_shell_speed: 25
 overlap_dual: 0.15
 platform_adhesion: raft
-print_bed_temperature: 60
-print_speed: 40
+print_speed: 50
 print_temperature:
 - 190
 - false

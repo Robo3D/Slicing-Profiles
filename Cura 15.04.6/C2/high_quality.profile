@@ -1,6 +1,6 @@
-_description: Imported from High Quality Robo C2.ini on 2017-03-01 20:45
-_display_name: PLA High Quality Robo C2
-bottom_layer_speed: 10
+_description: Imported from Ultra High Quality Robo C2.ini on 2017-03-17 20:43
+_display_name: PLA Ultra High Quality Robo C2
+bottom_layer_speed: 15
 bottom_thickness: 0.3
 brim_line_count: 8
 cool_head_lift: false
@@ -35,7 +35,7 @@ infill_speed: 40
 inset0_speed: 25
 insetx_speed: 25
 inner_shell_speed: 30
-layer_height: 0.1
+layer_height: 0.08
 layer0_width_factor: 300
 object_sink: false
 ooze_shield: false

@@ -1,6 +1,6 @@
-_description: Imported from High Quality Robo C2.ini on 2017-03-01 20:45
-_display_name: PET High Quality Robo C2
-bottom_layer_speed: 10
+_description: Imported from Ultra High Quality Robo C2.ini on 2017-03-17 20:43
+_display_name: PET Ultra High Quality Robo C2
+bottom_layer_speed: 15
 bottom_thickness: 0.3
 brim_line_count: 20
 cool_head_lift: false
@@ -35,9 +35,9 @@ fix_horrible_union_all_type_a: true
 fix_horrible_union_all_type_b: false
 fix_horrible_use_open_bits: false
 follow_surface: false
-infill_speed: 40
+infill_speed: 50
 inner_shell_speed: 25
-layer_height: 0.1
+layer_height: 0.08
 object_sink: false
 ooze_shield: false
 outer_shell_speed: 25
@@ -45,8 +45,8 @@ overlap_dual: 0.15
 platform_adhesion: raft
 print_speed: 50
 print_temperature:
-- 190
-- 190
+- 220
+- 220
 - false
 - false
 raft_airgap: 0.26
@@ -87,10 +87,7 @@ start_gcode:
   M190 S{print_bed_temperature} ;Uncomment to add your own bed temperature line
 
   M104 S{print_temperature} ;Uncomment to add your own temperature line
-
-  M109 T1 S{print_temperature2} ;Uncomment to add your own temperature line
-
-  M109 T0 S{print_temperature} ;Uncomment to add your own temperature line'
+  '
 - ''
 - ''
 - ''

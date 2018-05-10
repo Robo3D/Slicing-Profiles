@@ -1,5 +1,5 @@
-_description: Imported from HIGH.ini on 2017-04-22 00:25
-_display_name: high_quality
+_description: Imported from ULTRA HIGH.ini on 2017-04-22 00:26
+_display_name: ultra_high_quality
 bottom_layer_speed: 10
 bottom_thickness: 0.3
 brim_line_count: 8
@@ -26,7 +26,7 @@ filament_diameter:
 - false
 filament_flow: 100
 fill_density: 20
-fill_overlap: 10
+fill_overlap: 15
 first_layer_width_factor: 100
 fix_horrible_extensive_stitching: false
 fix_horrible_union_all_type_a: true
@@ -37,7 +37,7 @@ infill_speed: 40
 inset0_speed: 25
 insetx_speed: 25
 inner_shell_speed: 30
-layer_height: 0.1
+layer_height: 0.8
 layer0_width_factor: 300
 object_sink: false
 ooze_shield: false
@@ -45,13 +45,13 @@ outer_shell_speed: 25
 overlap_dual: 0.15
 platform_adhesion: raft
 print_bed_temperature: 60
-print_speed: 50
+print_speed: 40
 print_temperature:
 - 190
 - false
 - false
 - false
-rraft_airgap: 0.25
+raft_airgap: 0.25
 raft_airgap_all: 0.0
 raft_interface_thickness: 0.27
 raft_interface_linewidth: 0.4

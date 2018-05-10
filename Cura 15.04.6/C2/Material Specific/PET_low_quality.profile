@@ -1,6 +1,6 @@
-_description: Imported from Low Quality Robo C2.ini on 2017-03-17 20:42
-_display_name: PET Low Quality Robo C2
-bottom_layer_speed: 10
+_description: Imported from Medium Quality Robo C2.ini on 2018-03-01 20:43
+_display_name: PET Medium Quality Robo C2
+bottom_layer_speed: 15
 bottom_thickness: 0.3
 brim_line_count: 20
 cool_head_lift: false
@@ -36,8 +36,8 @@ fix_horrible_union_all_type_b: false
 fix_horrible_use_open_bits: false
 follow_surface: false
 infill_speed: 50
-inner_shell_speed: 50
-layer_height: 0.2
+inner_shell_speed: 30
+layer_height: 0.15
 object_sink: false
 ooze_shield: false
 outer_shell_speed: 25

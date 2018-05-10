@@ -1,8 +1,8 @@
-_description: Imported from Ultra High Quality Robo C2.ini on 2017-03-17 20:43
-_display_name: PET Ultra High Quality Robo C2
-bottom_layer_speed: 10
+_description: Imported from High Quality Robo C2.ini on 2017-03-01 20:45
+_display_name: PLA High Quality Robo C2
+bottom_layer_speed: 15
 bottom_thickness: 0.3
-brim_line_count: 20
+brim_line_count: 8
 cool_head_lift: false
 cool_min_feedrate: 19
 cool_min_layer_time: 7
@@ -26,7 +26,7 @@ filament_diameter:
 - 1.75
 - false
 - false
-filament_flow: 100
+filament_flow: 90
 fill_density: 20
 fill_overlap: 10
 first_layer_width_factor: 300
@@ -35,9 +35,12 @@ fix_horrible_union_all_type_a: true
 fix_horrible_union_all_type_b: false
 fix_horrible_use_open_bits: false
 follow_surface: false
-infill_speed: 50
-inner_shell_speed: 25
-layer_height: 0.06
+infill_speed: 40
+inset0_speed: 25
+insetx_speed: 25
+inner_shell_speed: 30
+layer_height: 0.1
+layer0_width_factor: 300
 object_sink: false
 ooze_shield: false
 outer_shell_speed: 25
@@ -45,8 +48,8 @@ overlap_dual: 0.15
 platform_adhesion: raft
 print_speed: 50
 print_temperature:
-- 220
-- 220
+- 190
+- 190
 - false
 - false
 raft_airgap: 0.26

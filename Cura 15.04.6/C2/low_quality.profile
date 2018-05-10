@@ -1,6 +1,6 @@
-_description: Imported from Low Quality Robo C2.ini on 2017-03-17 20:42
-_display_name: PLA Low Quality Robo C2
-bottom_layer_speed: 10
+_description: Imported from Medium Quality Robo C2.ini on 2018-03-01 20:43
+_display_name: PLA Medium Quality Robo C2
+bottom_layer_speed: 15
 bottom_thickness: 0.3
 brim_line_count: 8
 cool_head_lift: false
@@ -31,18 +31,18 @@ fix_horrible_union_all_type_a: true
 fix_horrible_union_all_type_b: false
 fix_horrible_use_open_bits: false
 follow_surface: false
-infill_speed: 40
+infill_speed: 50
 inset0_speed: 25
 insetx_speed: 25
-inner_shell_speed: 30
-layer_height: 0.2
-layer0_width_factor: 300
+inner_shell_speed: 50
+layer_height: 0.15
+layer0_width_factor: 150
 object_sink: false
 ooze_shield: false
 outer_shell_speed: 25
 overlap_dual: 0.15
 platform_adhesion: raft
-print_speed: 60
+print_speed: 50
 print_temperature:
 - 190
 - false
@@ -55,10 +55,9 @@ raft_interface_linewidth: 0.4
 raft_line_spacing: 3.0
 raft_margin: 5.0
 raft_surface_layers: 2
-retraction_enabled: true
-retraction_amount: 3.0
-retraction_combing: true
-retraction_dual_amount: 16.5
+retraction_amount: 3
+retraction_combing: all
+retraction_dual_amount: 2
 retraction_enable: true
 retraction_hop: 0.075
 retraction_min_travel: 7
