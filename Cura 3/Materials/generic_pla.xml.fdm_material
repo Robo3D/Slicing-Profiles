@@ -17,9 +17,9 @@
     <settings>
         <setting key="print temperature">190</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">160</setting>
         <setting key="print cooling">100.0</setting>
-        <setting key="retraction amount">1.75</setting>
+        <setting key="retraction amount">2</setting>
 
         <machine>
            <machine_identifier manufacturer="Robo" product="robo R2" />
