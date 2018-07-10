@@ -9,7 +9,6 @@
       "file_formats": "text/x-gcode",
       "has_materials": true,
       "has_machine_quality": true,
-      "preferred_material": "*robo_pla_red*",
       "preferred_quality": "*Normal*",
       "file_formats": "text/x-gcode",
 	    "platform": "robor2.stl",
@@ -50,7 +49,6 @@
 
             "retraction_combing": { "value": "'noskin'" },
             "retraction_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
-            "retraction_amount_multiplier": { "value": 2 },
             "retraction_retract_speed":
             {
                 "value": "min(retraction_speed, machine_max_feedrate_e)",

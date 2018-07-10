@@ -123,7 +123,7 @@
             "raft_surface_thickness": { "value": "0.2" },
 
             "retract_at_layer_change": { "value": false },
-            "retraction_amount_multiplier": { "value": 1 },
+            "retraction_amount_multiplier": { "value": "1.0" },
             "retraction_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
             "retraction_retract_speed":
             {
@@ -152,7 +152,7 @@
             "speed_equalize_flow_enabled": { "value": true },
             "speed_equalize_flow_max": { "value": 100 },
             "speed_infill": { "default_value": "speed_print" },
-            "speed_layer_0": { "value": "20" },
+            "speed_layer_0": { "value": "15" },
             "speed_prime_tower": { "value": "speed_topbottom" },
             "speed_support": { "value": "speed_wall_0" },
             "speed_support_interface": { "value": "speed_topbottom" },
@@ -173,7 +173,7 @@
             "switch_extruder_prime_speed": { "value": "10" },
             "switch_extruder_retraction_amount": { "value": "5" },
 
-            "top_bottom_thickness": { "value": "layer_height * 3" },
+            "top_bottom_thickness": { "value": "1" },
             "travel_avoid_distance": { "value": "3" },
 
             "wall_thickness": { "value": "1.0" },
