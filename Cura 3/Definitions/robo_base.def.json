@@ -1,5 +1,4 @@
 {
-    "id": "robo_base",
     "name": "Robo",
     "version": 2,
     "inherits": "fdmprinter",

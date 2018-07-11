@@ -1,5 +1,4 @@
 {
-    "id": "roboc2",
     "version": 2,
     "name": "Robo C2",
     "inherits": "robo_base",
@@ -11,8 +10,7 @@
         "visible": true,
         "has_machine_quality": true,
         "has_materials": true,
-        "preferred_quality": "*Normal*",
-        "preferred_material": "*robo_pla_capri_teal*",
+        "preferred_quality_type": "normal",
 		    "platform": "roboc2.stl",
         "platform_offset": [0, -22, -35]
     },

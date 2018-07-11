@@ -1,18 +1,10 @@
 {
-    "id": "robor2_dual",
     "version": 2,
     "name": "Robo R2 Dual",
     "inherits": "robor2",
     "metadata": {
       "visible": true,
       "author": "Robo",
-      "file_formats": "text/x-gcode",
-      "has_materials": true,
-      "has_machine_quality": true,
-      "preferred_quality": "*Normal*",
-      "file_formats": "text/x-gcode",
-	    "platform": "robor2.stl",
-      "platform_offset": [-117, -22, -135],
       "machine_extruder_trains":
       {
           "0": "robor2_dual_extruder_0",
