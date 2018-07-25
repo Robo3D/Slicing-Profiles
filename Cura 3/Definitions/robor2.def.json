@@ -18,7 +18,7 @@
     "overrides": {
         "machine_name": { "default_value": "Robo R2" },
         "machine_start_gcode": {
-            "default_value": "; -- START GCODE --\n;-- end of START GCODE --" },
+            "default_value": "G92 E0 ;zero the extruded length\nG1 F200 E10 ;extrude 10 mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 F9000;" },
         "machine_end_gcode": {
             "default_value": "; -- END GCODE --\n; -- end of END GCODE --" },
 	    	"machine_width": { "default_value": 197 },
