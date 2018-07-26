@@ -37,7 +37,6 @@
             "machine_center_is_zero": { "default_value": false },
             "machine_gcode_flavor": { "default_value": "RepRap (Marlin/Sprinter)" },
             "machine_min_cool_heat_time_window": { "value": "15" },
-            "machine_min_cool_heat_time_window": { "value": "15" },
             "machine_head_with_fans_polygon":
             {
                 "default_value":
@@ -127,9 +126,8 @@
             "raft_surface_thickness": { "value": "0.15" },
 
             "retract_at_layer_change": { "value": false },
-            "retraction_amount_multiplier": { "value": "1.0" },
-            "retraction_speed": { "value": "30" },
-            "retraction_retract_speed": { "value": "30" },
+            "retraction_speed": { "value": "40" },
+            "retraction_retract_speed": { "value": "40" },
             "retraction_prime_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
             "retraction_enable": { "value": true},
             "retraction_amount": { "value": "1.5" },
