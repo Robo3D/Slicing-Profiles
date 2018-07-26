@@ -13,7 +13,7 @@
             "default_value": 1,
             "maximum_value": "1"
         },
-        "machine_nozzle_offset_x": { "default_value": 21.5 },
+        "machine_nozzle_offset_x": { "default_value": 0.0 },
         "machine_nozzle_offset_y": { "default_value": 0.0 },
         "machine_extruder_start_pos_abs": { "default_value": false },
         "machine_extruder_start_pos_x": { "default_value": 0.0 },
@@ -24,6 +24,7 @@
         "machine_extruder_end_pos_y": { "default_value": 0.0 },
         "extruder_prime_pos_x": { "default_value": 0.0 },
         "extruder_prime_pos_y": { "default_value": 0.0 },
-        "extruder_prime_pos_z": { "default_value": 2.0 }
+        "extruder_prime_pos_z": { "default_value": 0.0 },
+        "retraction_amount_multiplier": { "value": "1.2" }
     }
 }
