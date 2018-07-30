@@ -68,7 +68,7 @@
             "coasting_enable": { "value": false },
             "coasting_min_volume": { "value": "coasting_volume * 2" },
 
-            "cool_fan_full_at_height": { "value": "layer_height_0 + 4 * layer_height if adhesion_type == 'raft' else layer_height_0 + 3 * layer_height" },
+            "cool_fan_full_at_height": { "value": "0 if adhesion_type == 'raft' else layer_height_0 + 3 * layer_height" },
             "cool_fan_speed": { "value": "100" },
             "cool_fan_speed_max": { "value": "100" },
             "cool_min_speed": { "value": "5" },
@@ -103,8 +103,6 @@
             "fill_perimeter_gaps": { "value": "'everywhere'" },
             "multiple_mesh_overlap": { "value": "0" },
 
-            "material_print_temperature_layer_0": { "value": "material_print_temperature + 5" },
-
             "prime_tower_enable": { "default_value": false },
             "prime_tower_position_x": { "value": "machine_depth - max(extruderValue(adhesion_extruder_nr, 'brim_width') * extruderValue(adhesion_extruder_nr, 'initial_layer_line_width_factor') / 100 if adhesion_type == 'brim' else (extruderValue(adhesion_extruder_nr, 'raft_margin') if adhesion_type == 'raft' else (extruderValue(adhesion_extruder_nr, 'skirt_gap') if adhesion_type == 'skirt' else 0)), max(extruderValues('travel_avoid_distance'))) - max(extruderValues('support_offset')) - sum(extruderValues('skirt_brim_line_width')) - 30" },
             "prime_tower_wipe_enabled": { "default_value": false },
@@ -126,18 +124,16 @@
             "raft_surface_thickness": { "value": "0.15" },
 
             "retract_at_layer_change": { "value": false },
-            "retraction_speed": { "value": "40" },
-            "retraction_retract_speed": { "value": "40" },
+            "retraction_retract_speed": { "default_value": 25 },
             "retraction_prime_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
             "retraction_enable": { "value": true},
-            "retraction_amount": { "value": "1.5" },
+            "retraction_amount": { "default_value": 1.5 },
             "retraction_count_max": { "value": "10" },
             "retraction_extrusion_window": { "value": "0.5" },
             "retraction_hop": { "default": "0.075", "visible": true },
             "retraction_hop_enabled": { "value": "True" },
             "retraction_hop_only_when_collides": { "value": "True" },
             "retraction_min_travel": { "value": "5" },
-            "retraction_prime_speed": { "value": "30" },
 
             "skin_overlap": { "value": "0" },
             "skin_line_width": { "value": "0.4"},
