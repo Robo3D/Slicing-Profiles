@@ -135,7 +135,7 @@
             "retraction_hop": { "default": "0.075", "visible": true },
             "retraction_hop_enabled": { "default_value": false },
             "retraction_hop_only_when_collides": { "value": "True" },
-            "retraction_min_travel": { "value": 5 },
+            "retraction_min_travel": { "value": "5" },
 
             "skin_overlap": { "value": "0" },
             "skin_line_width": { "value": "0.4"},
