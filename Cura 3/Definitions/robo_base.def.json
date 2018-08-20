@@ -132,10 +132,12 @@
             "retraction_amount": { "default_value": 1.5 },
             "retraction_count_max": { "value": "10" },
             "retraction_extrusion_window": { "value": "0.5" },
-            "retraction_hop": { "default": "0.075", "visible": true },
+            "retraction_hop": { "default": "0.1", "visible": true },
             "retraction_hop_enabled": { "default_value": false },
             "retraction_hop_only_when_collides": { "value": "True" },
             "retraction_min_travel": { "value": "5" },
+            "retraction_extra_prime_amount": { "default_value": 0.15 },
+            "travel_retract_before_outer_wall": { "value": true },
 
             "skin_overlap": { "value": "0" },
             "skin_line_width": { "value": "0.4"},
@@ -164,7 +166,7 @@
             "support_use_towers": { "value": "False" },
             "support_xy_distance": { "value": "wall_line_width_0 * 2.5" },
             "support_xy_distance_overhang": { "value": "wall_line_width_0" },
-            "support_z_distance": { "value": "0.16" },
+            "support_z_distance": { "value": "0.2" },
 
             "switch_extruder_prime_speed": { "value": "10" },
             "switch_extruder_retraction_amount": { "value": "20" },
