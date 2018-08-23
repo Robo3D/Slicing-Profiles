@@ -1,10 +1,12 @@
 {
     "version": 2,
     "name": "Robo R2 Dual",
-    "inherits": "robor2",
+    "inherits": "robo_base",
     "metadata": {
       "visible": true,
       "author": "Robo",
+      "platform": "robor2.stl",
+      "platform_offset": [-117, -22, -135],
       "machine_extruder_trains":
       {
           "0": "robor2_dual_extruder_0",
@@ -15,9 +17,9 @@
         "overrides": {
             "machine_name": { "default_value": "Robo R2 Dual" },
             "machine_start_gcode": {
-                "default_value": "G92 E0 ;zero the extruded length\nG1 F200 E10 ;extrude 10 mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 F9000" },
+                "default_value": "" },
             "machine_end_gcode": {
-                "default_value": "; -- END GCODE --\n; -- end of END GCODE --" },
+                "default_value": "" },
 
             "machine_width": { "default_value": 197 },
             "machine_depth": { "default_value": 197 },
@@ -41,10 +43,11 @@
             "prime_tower_wall_thickness": { "value": 1.6 },
             "prime_tower_position_x": { "value": "machine_depth - max(extruderValue(adhesion_extruder_nr, 'brim_width') * extruderValue(adhesion_extruder_nr, 'initial_layer_line_width_factor') / 100 if adhesion_type == 'brim' else (extruderValue(adhesion_extruder_nr, 'raft_margin') if adhesion_type == 'raft' else (extruderValue(adhesion_extruder_nr, 'skirt_gap') if adhesion_type == 'skirt' else 0)), max(extruderValues('travel_avoid_distance'))) - max(extruderValues('support_offset')) - sum(extruderValues('skirt_brim_line_width')) - 30" },
             "prime_tower_wipe_enabled": { "default_value": true },
-            "prime_tower_purge_volume": { "value": 0.75 },
+            "prime_tower_purge_volume": { "value": 1.0 },
             "dual_pre_wipe": { "default_value": false },
 
             "retraction_combing": { "value": "'noskin'" },
+            "retraction_hop_enabled": { "default_value": true },
             "retraction_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
             "retraction_retract_speed":
             {
@@ -60,9 +63,8 @@
             },
             "switch_extruder_prime_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
             "retraction_hop_height_after_extruder_switch": { "value": 5 },
-            "support_enabled": { "default_value": true },
+
             "support_extruder_nr": { "default_value": 1 },
-            "support_tree_enable": { "default_value": false },
-            "travel_retract_before_outer_wall": { "default_value": true }
+            "support_tree_enable": { "default_value": false }
         }
     }

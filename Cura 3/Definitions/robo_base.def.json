@@ -73,15 +73,11 @@
             "cool_fan_speed_max": { "value": "100" },
             "cool_min_speed": { "value": "5" },
 
-            "infill_line_width": { "value": "round(line_width * 0.5 / 0.35, 2)" },
-            "infill_overlap": { "value": "10" },
-            "infill_pattern": { "value": "'grid'" },
+            "infill_before_walls": { "value": false },
+            "infill_pattern": { "value": "'triangles'" },
             "infill_wipe_dist": { "value": "0" },
-            "infill_sparse_thickness": { "value": "layer_height" },
-            "infill_before_walls": { "value": true },
-            "infill_line_width": { "value": "machine_nozzle_size" },
 
-            "initial_layer_line_width_factor": { "value": "120" },
+            "initial_layer_line_width_factor": { "value": "120 if adhesion_type == 'raft' else 150" },
 
             "jerk_enabled": { "value": false },
             "jerk_print": { "value": "machine_max_jerk_xy" },
@@ -105,12 +101,7 @@
 
             "optimize_wall_printing_order": { "value": "True" },
 
-            "prime_tower_enable": { "default_value": false },
-            "prime_tower_position_x": { "value": "machine_depth - max(extruderValue(adhesion_extruder_nr, 'brim_width') * extruderValue(adhesion_extruder_nr, 'initial_layer_line_width_factor') / 100 if adhesion_type == 'brim' else (extruderValue(adhesion_extruder_nr, 'raft_margin') if adhesion_type == 'raft' else (extruderValue(adhesion_extruder_nr, 'skirt_gap') if adhesion_type == 'skirt' else 0)), max(extruderValues('travel_avoid_distance'))) - max(extruderValues('support_offset')) - sum(extruderValues('skirt_brim_line_width')) - 30" },
-            "prime_tower_wipe_enabled": { "default_value": false },
-            "prime_tower_purge_volume": { "default_value": 1.0 },
-            "prime_blob_enable": { "enabled": false },
-            "extruder_prime_pos_abs": { "default_value": true },
+            "prime_blob_enable": { "default_enabled": false },
 
             "raft_airgap": { "value": "0.3" },
             "raft_base_thickness": { "value": "0.3" },
@@ -125,30 +116,25 @@
             "raft_surface_layers": { "value": "3" },
             "raft_surface_thickness": { "value": "0.15" },
 
-            "retract_at_layer_change": { "default_value": true },
             "retraction_retract_speed": { "default_value": 25 },
             "retraction_prime_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
-            "retraction_enable": { "default_value": true },
             "retraction_amount": { "default_value": 1.5 },
             "retraction_count_max": { "value": "10" },
-            "retraction_extrusion_window": { "value": "0.5" },
-            "retraction_hop": { "default": "0.1", "visible": true },
-            "retraction_hop_enabled": { "default_value": false },
-            "retraction_hop_only_when_collides": { "value": "True" },
+            "retraction_extrusion_window": { "value": "1" },
             "retraction_min_travel": { "value": "5" },
             "retraction_extra_prime_amount": { "default_value": 0.15 },
-            "travel_retract_before_outer_wall": { "value": true },
+            "travel_retract_before_outer_wall":
+            {
+              "default_value": true,
+              "enabled": "retraction_enable"
+            },
 
-            "skin_overlap": { "value": "0" },
-            "skin_line_width": { "value": "0.4"},
 
             "speed_wall": { "value": "speed_print" },
             "speed_topbottom": { "value": "speed_wall_0" },
             "speed_support_interface": { "value": "speed_wall" },
             "speed_travel": { "value": "round(speed_print if magic_spiralize else 80)" },
             "speed_travel_layer_0": { "value": "round(speed_travel * speed_layer_0 / speed_print, 1)" },
-            "speed_equalize_flow_enabled": { "value": true },
-            "speed_equalize_flow_max": { "value": 100 },
             "speed_infill": { "default_value": "speed_print" },
             "speed_layer_0": { "value": "15" },
             "speed_prime_tower": { "value": "speed_topbottom" },
@@ -174,14 +160,13 @@
             "top_bottom_thickness": { "value": "1" },
             "travel_avoid_distance": { "value": "3 if extruders_enabled_count > 1 else machine_nozzle_tip_outer_diameter / 2 * 1.5" },
 
-            "wall_thickness": { "default_value": 1.0 },
             "wall_line_width_x": { "value": "machine_nozzle_size" },
             "wall_line_width_0": { "value": "machine_nozzle_size * 0.875" },
-            "wall_0_inset": { "value": "0" },
 
             "z_seam_type": { "value": "'back'" },
             "z_seam_x": { "value": "int(machine_width/2.) if print_mode == 'regular' else int((machine_width/2.)/2.) if print_mode == 'duplication' else int((machine_width/2. - 54/2)/2.)" },
             "z_seam_y": { "value": "machine_depth" },
-            "z_seam_relative": { "value": false }
+            "z_seam_relative": { "value": false },
+            "zig_zaggify_infill": { "value": "gradual_infill_steps == 0" }
         }
     }
