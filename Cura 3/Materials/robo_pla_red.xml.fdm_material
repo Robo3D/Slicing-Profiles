@@ -21,14 +21,14 @@
       <setting key="print cooling">100</setting>
       <machine>
         <machine_identifier manufacturer="Robo" product="robor2" />
-        <setting key="print temperature">195</setting>
+        <setting key="print temperature">190</setting>
         <setting key="material initial print temperature">200.0</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="print cooling">100</setting>
       </machine>
       <machine>
         <machine_identifier manufacturer="Robo" product="Robo C2" />
-        <setting key="print temperature">195</setting>
+        <setting key="print temperature">190</setting>
         <setting key="material initial print temperature">200.0</setting>
         <setting key="print cooling">100</setting>
       </machine>
