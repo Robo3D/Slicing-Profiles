@@ -17,9 +17,5 @@
     <settings>
         <setting key="print temperature">223</setting>
         <setting key="heated bed temperature">65</setting>
-        <machine>
-           <machine_identifier manufacturer="Robo" product="Robo R2" />
-           <machine_identifier manufacturer="Robo" product="Robo R1" />
-        </machine>
     </settings>
 </fdmmaterial>
