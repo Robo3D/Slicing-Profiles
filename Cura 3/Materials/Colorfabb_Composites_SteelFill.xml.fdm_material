@@ -4,14 +4,14 @@
         <name>
             <brand>Colorfabb</brand>
             <material>Composites</material>
-            <color>CopperFill</color>
+            <color>SteelFill</color>
         </name>
-        <GUID>537568b6-050c-11e8-a53f-efc9d1bc38a9</GUID>
+        <GUID>53765311-050c-11e8-881d-efc9d1bc38a9</GUID>
         <version>1</version>
-        <color_code>#B58164</color_code>
+        <color_code>#80867F</color_code>
     </metadata>
     <properties>
-        <density>3.9</density>
+        <density>3.13</density>
         <diameter>1.75</diameter>
     </properties>
     <settings>
@@ -20,7 +20,6 @@
         <machine>
            <machine_identifier manufacturer="Robo" product="Robo R2" />
            <machine_identifier manufacturer="Robo" product="Robo C2" />
-           <machine_identifier manufacturer="Robo" product="Robo R1" />
         </machine>
     </settings>
 </fdmmaterial>
