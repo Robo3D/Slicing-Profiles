@@ -21,6 +21,6 @@
         "machine_extruder_end_pos_abs": { "default_value": true },
         "machine_extruder_end_pos_x": { "value": "prime_tower_position_x" },
         "machine_extruder_end_pos_y": { "value": "prime_tower_position_y" },
-        "retraction_amount_multiplier": { "default_value": 1 }
+        "retraction_amount_multiplier": { "value": 1 }
     }
 }
