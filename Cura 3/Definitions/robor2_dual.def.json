@@ -99,9 +99,6 @@
             },
 
             "switch_extruder_retraction_amount": { "value": "6" },
-
-
-            "switch_extruder_prime_speed": { "value": "10" },
             "switch_extruder_retraction_speeds": { "maximum_value_warning": "machine_max_feedrate_e" },
             "switch_extruder_retraction_speed":
             {
