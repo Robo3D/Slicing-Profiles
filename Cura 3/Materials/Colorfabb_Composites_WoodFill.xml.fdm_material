@@ -15,13 +15,12 @@
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">215</setting>
+        <setting key="print temperature">195</setting>
         <setting key="heated bed temperature">65</setting>
         <machine>
            <machine_identifier manufacturer="Robo" product="Robo R2" />
            <machine_identifier manufacturer="Robo" product="Robo C2" />
            <machine_identifier manufacturer="Robo" product="Robo R1" />
-           <setting key="hardware compatible">yes</setting>
         </machine>
     </settings>
 </fdmmaterial>
