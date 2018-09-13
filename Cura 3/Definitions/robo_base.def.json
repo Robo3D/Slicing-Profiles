@@ -16,8 +16,8 @@
             "machine_max_jerk_xy": { "value": 8 },
             "machine_max_feedrate_x": { "default_value": 300 },
             "machine_max_feedrate_y": { "default_value": 300 },
-            "machine_max_feedrate_z": { "default_value": 15 },
-            "machine_max_feedrate_e": { "default_value": 25 },
+            "machine_max_feedrate_z": { "default_value": 25 },
+            "machine_max_feedrate_e": { "default_value": 45 },
             "machine_endstop_positive_direction_y": { "default_value": true },
             "material_bed_temp_wait": { "value": true },
             "machine_filament_park_distance": { "value": "machine_heat_zone_length + 5" },
@@ -75,7 +75,6 @@
             "cool_fan_speed_max": { "value": "100" },
             "cool_min_speed": { "value": "5" },
 
-            "infill_before_walls": { "value": false },
             "infill_pattern": { "value": "'triangles'" },
             "infill_wipe_dist": { "value": "0" },
 
@@ -119,7 +118,6 @@
             "raft_surface_thickness": { "value": "0.15" },
 
             "retraction_amount": { "default_value": 1.5 },
-            "retraction_retract_speed": { "default_value": 25 },
             "retraction_prime_speed": { "maximum_value_warning": "machine_max_feedrate_e" },
             "retraction_count_max": { "value": "10" },
             "retraction_extrusion_window": { "value": "1" },
@@ -131,6 +129,7 @@
               "default_value": true,
               "enabled": "retraction_enable"
             },
+
 
             "speed_wall": { "value": "speed_print" },
             "speed_topbottom": { "value": "speed_wall_0" },
@@ -154,7 +153,7 @@
             "support_use_towers": { "value": "False" },
             "support_xy_distance": { "value": "wall_line_width_0 * 2.5" },
             "support_xy_distance_overhang": { "value": "wall_line_width_0" },
-            "support_z_distance": { "value": "0.2" },
+            "support_z_distance": { "value": "0.26" },
 
             "top_bottom_thickness": { "value": "1" },
             "travel_avoid_distance": { "value": "3 if extruders_enabled_count > 1 else machine_nozzle_tip_outer_diameter / 2 * 1.5" },
