@@ -22,7 +22,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
     <settings>
         <setting key="print temperature">190</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">160</setting>
+        <setting key="standby temperature">150</setting>
         <setting key="print cooling">100.0</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
